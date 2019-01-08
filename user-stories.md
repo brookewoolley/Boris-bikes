@@ -34,4 +34,7 @@ I'd like to see if a bike is working
          |
          |  Release
          +
+   +------+------+
+   |    Bike     |
+   +------+------+
 
