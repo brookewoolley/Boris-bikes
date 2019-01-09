@@ -7,7 +7,7 @@ class DockingStation
   end
 
   def dock(bike)
-    bike.class == Bike
+    bike
   end
 
   def bike
