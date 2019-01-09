@@ -19,7 +19,7 @@ bike = docking_station.release_bike
     end
   
     it 'dock a bike' do
-      expect(docking_station.dock(bike)).to eq(true)
+      expect(docking_station).to respond_to(:dock).with(1).argument
     end
 
 end
