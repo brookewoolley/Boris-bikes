@@ -24,4 +24,9 @@ bike = docking_station.release_bike
 
     it { is_expected.to respond_to :bike }
 
+    it 'docks something' do
+      bike = Bike.new
+      expect(docking_station.dock(bike)).to eq bike
+    end
+
 end
