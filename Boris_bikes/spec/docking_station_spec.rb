@@ -17,5 +17,9 @@ bike = docking_station.release_bike
     it 'expect bike to work' do
       expect(bike.working?).to eq(true)
     end
+  
+    it 'dock a bike' do
+      expect(docking_station.dock(bike)).to eq(true)
+    end
 
 end
