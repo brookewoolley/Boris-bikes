@@ -29,4 +29,10 @@ bike = docking_station.release_bike
       expect(docking_station.dock(bike)).to eq bike
     end
 
+    it 'returns docked bikes' do
+      bike = Bike.new
+      docking_station.dock(bike)
+      expect(docking_station.bike).to eq bike
+    end
+
 end
