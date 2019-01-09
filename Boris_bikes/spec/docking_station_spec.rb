@@ -17,9 +17,11 @@ bike = docking_station.release_bike
     it 'expect bike to work' do
       expect(bike.working?).to eq(true)
     end
-  
+
     it 'dock a bike' do
       expect(docking_station).to respond_to(:dock).with(1).argument
     end
+
+    it { is_expected.to respond_to :bike }
 
 end
