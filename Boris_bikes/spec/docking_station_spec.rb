@@ -8,8 +8,14 @@ describe DockingStation do
 it { is_expected.to respond_to :release_bike }
 # it {should respond_to 'release_bike'} - another example
 
+bike = docking_station.release_bike
+
    it 'gets a bike' do
-    expect(docking_station.release_bike).to be_a Bike 
+    expect(bike).to be_a Bike
+    end
+
+    it 'expect bike to work' do
+      expect(bike.working?).to eq(true)
     end
 
 end
