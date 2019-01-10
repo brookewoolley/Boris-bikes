@@ -9,12 +9,12 @@ class DockingStation
   end
 
   def release_bike
-    fail 'There are no bikes' unless @bikes.length > 0
+    fail 'There are no bikes' if @bikes.empty?
     @bikes.pop
   end
 
   def dock(bike)
-    fail 'Reached Maximum Capacity' if @bikes.length == 20
+    fail 'Reached Maximum Capacity' if @bikes.count >= 20
     @bikes << bike
   end
 
