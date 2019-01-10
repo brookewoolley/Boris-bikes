@@ -10,6 +10,7 @@ class DockingStation
   end
 
   def dock(bike)
+    fail 'Reached Maximum Capacity' if @bike
     @bike = bike
   end
 
